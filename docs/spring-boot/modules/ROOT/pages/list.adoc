@@ -4,7 +4,6 @@
 :base-attributes-query: {base-query},attributes=camel-spring-boot-name
 :base-deprecated-query: {base-query},attributes='camel-spring-boot-name,deprecated'
 :base-missing-query: {base-query},attributes=!camel-spring-boot-name
-
 include::indexcount$[component=components,module=spring-boot,family=example,queries='existing=']
 include::indexuniquecount$[component=components,module=*,attributes=camel-spring-boot-name,formats='used=camelSpringBootName']
 

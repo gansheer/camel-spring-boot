@@ -1,4 +1,4 @@
-= SpringDoc
+= Springdoc
 //Manually maintained attributes
 :artifactid: camel-springdoc
 :shortname: springdoc
