@@ -1,41 +1,7 @@
 = Kubernetes Cluster Service
-:doctitle: Kubernetes Cluster Service
+//Manually maintained attributes
+:artifactid: camel-kubernetes-cluster-service
 :shortname: kubernetes-cluster-service
-:artifactid: camel-kubernetes-cluster-service-starter
-:description: Cluster service implementation using Kubernetes for distributed coordination and leader election
-:since:
-:supportlevel: Stable
-:tabs-sync-option:
 :camel-spring-boot-name: kubernetes-cluster-service
 
-The Kubernetes Cluster Service provides cluster coordination capabilities using Kubernetes native resources for distributed systems.
-
-This cluster service can be used for:
-
-* Leader election across multiple Camel instances running in Kubernetes
-* Distributed coordination using Kubernetes ConfigMaps or Leases
-* High availability scenarios in Kubernetes environments
-
-== Spring Boot Auto-Configuration
-
-The component supports Spring Boot auto-configuration via the `camel.cluster.kubernetes` configuration prefix.
-
-[source,properties]
-----
-camel.cluster.kubernetes.enabled=true
-camel.cluster.kubernetes.id=my-cluster
-camel.cluster.kubernetes.kubernetes-namespace=default
-----
-
-For a complete list of configuration options, see the xref:clustering.adoc[Clustering] documentation.
-
-== Maven Dependency
-
-[source,xml]
-----
-<dependency>
-    <groupId>org.apache.camel.springboot</groupId>
-    <artifactId>camel-kubernetes-cluster-service-starter</artifactId>
-    <version>${camel.version}</version>
-</dependency>
-----
+Cluster service implementation using Kubernetes for distributed coordination and leader election in Spring Boot applications.

@@ -1,41 +1,7 @@
 = JGroups Raft Cluster Service
-:doctitle: JGroups Raft Cluster Service
+//Manually maintained attributes
+:artifactid: camel-jgroups-raft-cluster-service
 :shortname: jgroups-raft-cluster-service
-:artifactid: camel-jgroups-raft-cluster-service-starter
-:description: Cluster service implementation using JGroups Raft for distributed coordination and leader election
-:since:
-:supportlevel: Stable
-:tabs-sync-option:
 :camel-spring-boot-name: jgroups-raft-cluster-service
 
-The JGroups Raft Cluster Service provides cluster coordination capabilities using the JGroups Raft consensus algorithm for distributed systems.
-
-This cluster service can be used for:
-
-* Leader election across multiple Camel instances
-* Distributed coordination using Raft consensus
-* High availability scenarios with strong consistency guarantees
-
-== Spring Boot Auto-Configuration
-
-The component supports Spring Boot auto-configuration via the `camel.cluster.jgroups.raft` configuration prefix.
-
-[source,properties]
-----
-camel.cluster.jgroups.raft.enabled=true
-camel.cluster.jgroups.raft.id=my-cluster
-camel.cluster.jgroups.raft.raft-id=node1
-----
-
-For a complete list of configuration options, see the xref:clustering.adoc[Clustering] documentation.
-
-== Maven Dependency
-
-[source,xml]
-----
-<dependency>
-    <groupId>org.apache.camel.springboot</groupId>
-    <artifactId>camel-jgroups-raft-cluster-service-starter</artifactId>
-    <version>${camel.version}</version>
-</dependency>
-----
+Cluster service implementation using JGroups Raft consensus algorithm for distributed coordination and leader election in Spring Boot applications.

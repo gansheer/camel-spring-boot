@@ -1,40 +1,7 @@
 = Infinispan Cluster Service
-:doctitle: Infinispan Cluster Service
+//Manually maintained attributes
+:artifactid: camel-infinispan-cluster-service
 :shortname: infinispan-cluster-service
-:artifactid: camel-infinispan-cluster-service-starter
-:description: Cluster service implementation using Infinispan for distributed coordination and leader election
-:since:
-:supportlevel: Stable
-:tabs-sync-option:
 :camel-spring-boot-name: infinispan-cluster-service
 
-The Infinispan Cluster Service provides cluster coordination capabilities using Infinispan for distributed systems.
-
-This cluster service can be used for:
-
-* Leader election across multiple Camel instances
-* Distributed coordination
-* High availability scenarios
-
-== Spring Boot Auto-Configuration
-
-The component supports Spring Boot auto-configuration via the `camel.cluster.infinispan.remote` configuration prefix.
-
-[source,properties]
-----
-camel.cluster.infinispan.remote.enabled=true
-camel.cluster.infinispan.remote.id=my-cluster
-----
-
-For a complete list of configuration options, see the xref:clustering.adoc[Clustering] documentation.
-
-== Maven Dependency
-
-[source,xml]
-----
-<dependency>
-    <groupId>org.apache.camel.springboot</groupId>
-    <artifactId>camel-infinispan-cluster-service-starter</artifactId>
-    <version>${camel.version}</version>
-</dependency>
-----
+Cluster service implementation using Infinispan for distributed coordination and leader election in Spring Boot applications.

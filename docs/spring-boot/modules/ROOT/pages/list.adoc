@@ -4,6 +4,8 @@
 :base-attributes-query: {base-query},attributes=camel-spring-boot-name
 :base-deprecated-query: {base-query},attributes='camel-spring-boot-name,deprecated'
 :base-missing-query: {base-query},attributes=!camel-spring-boot-name
+:base-non-camel-query: {base-query},attributes='manual-doc,camel-spring-boot-name'
+
 include::indexcount$[component=components,module=spring-boot,family=example,queries='existing=']
 include::indexuniquecount$[component=components,module=*,attributes=camel-spring-boot-name,formats='used=camelSpringBootName']
 
@@ -132,3 +134,11 @@ ifdef::sb-statistics[]
 |===
 indexTable::[{cellformats},{requires},module=others,{base-missing-query}]
 endif::[]
+
+=== Non-Camel Miscellaneous Starters
+
+[{index-table-format}]
+|===
+| Extensions | Artifact | Support Level | Since | Description
+|===
+indexTable::[{cellformats},{requires},module=others,{base-non-camel-query}]
